@@ -12,7 +12,8 @@ import { CartService } from '../cart.service';
 export class ProductDetailsComponent implements OnInit {
 
   product: Product | undefined;
-  constructor(private route: ActivatedRoute) { }
+
+  constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
   ngOnInit() {
     // First get the product id from the current route.
